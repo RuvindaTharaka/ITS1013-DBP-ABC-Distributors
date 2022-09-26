@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemsController">
+   <children>
+      <Label prefHeight="42.0" prefWidth="1111.0" style="-fx-background-color: gray;" text=" ABC Distributors">
+         <font>
+            <Font name="Bauhaus 93" size="26.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="324.0" layoutY="42.0" prefHeight="53.0" prefWidth="430.0" text="Add Items">
+         <font>
+            <Font name="Elephant" size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutX="7.0" layoutY="100.0" prefHeight="0.0" prefWidth="1096.0" />
+      <Label layoutX="54.0" layoutY="146.0" prefHeight="30.0" prefWidth="96.0" text="Item Code">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="242.0" prefHeight="30.0" prefWidth="96.0" text="Description">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="346.0" prefHeight="30.0" prefWidth="96.0" text="Pack Size">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="420.0" prefHeight="30.0" prefWidth="96.0" text="Unit Price     ">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="486.0" prefHeight="30.0" prefWidth="96.0" text="Qty On hand  ">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtItemCode" layoutX="174.0" layoutY="146.0" prefHeight="31.0" prefWidth="812.0" />
+      <JFXTextField fx:id="txtPackSize" layoutX="174.0" layoutY="346.0" prefHeight="31.0" prefWidth="812.0" />
+      <JFXTextArea fx:id="txtDescription" layoutX="174.0" layoutY="209.0" prefHeight="96.0" prefWidth="812.0" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="174.0" layoutY="420.0" prefHeight="31.0" prefWidth="812.0" />
+      <JFXTextField fx:id="txtQtyOnHand" layoutX="174.0" layoutY="486.0" prefHeight="31.0" prefWidth="812.0" />
+      <JFXButton buttonType="RAISED" layoutX="825.0" layoutY="586.0" onAction="#addOnAction" prefHeight="53.0" prefWidth="161.0" style="-fx-background-color: #0059ff;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="32.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
